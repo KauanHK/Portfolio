@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(43, 43, 43);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 5px  aqua;
+}
+
+.links {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.links ul {   
+    list-style-type: none;
+}
+
+.links li {
+    margin: 0 50px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.links li a:hover {
+    color: aqua;
+    transition: .3s;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav img {
+    width: 60px;
+}
+
+main {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    width: 80%;
+    height: 400px;
+    margin-bottom: 200px;
+    padding: 50px;
+    background-color: rgb(59, 59, 59);
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section.inicio, .section-cards .cards {
+    box-shadow: 0 0 10px 2px aqua;
+}
+
+section div {
+    width: 40%;
+}
+
+section .container-text p {
+    color: white;
+}
+
+section.inicio .container-img {
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    position: relative;
+    width: 70%;
+    height: auto;
+}
+
+section h1 {
+    color: rgb(0, 170, 170);
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+}
+
+section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+section .veja-mais {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 2% 3%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+section .veja-mais:hover {
+    background: linear-gradient(aqua,rgb(108, 255, 255));
+    transition: .3s;
+}
+
+.section-cards{
+    background-color: rgb(43, 43, 43);
+}
+
+.section-cards h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.section-cards .cards {
+    width: 25%;
+    height: 100%;
+    padding: 20px 0 50px 0;
+    background-color: rgb(59, 59, 59);
+}
+
+.section-cards .container-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+
+.section-cards .container-img .img {
+    width: 75%;
+    height: 200px;
+    background-color: rgb(85, 85, 85);
+}
+
+.section-cards ul {
+    padding-left: 18%;
+    margin-bottom: 5%;
+}
+
+.section-cards ul li {
+    color: white;
+    font-size: 20px;
+}
+
+.section-cards a {
+    padding: 10px 10px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin-left: 12%;
+    /* background-color: rgb(121, 255, 248); */
+    background-color: white;
+    border-radius: 50px;
+}
+
+.section-cards a:hover {
+    background: linear-gradient(aqua,rgb(121, 255, 248));
+    transition: .3s;
+}
