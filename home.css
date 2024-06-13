@@ -1,0 +1,150 @@
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .titulo h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(0, 180, 180);
+}
+
+main .titulo h2 {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(119, 119, 119);
+}
+
+main .container-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+    
+main .titulo h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(180, 180, 180);
+    margin-bottom: 50px;
+}
+
+main .container-botoes {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .container-botoes a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(23, 192, 178);
+}
+
+main .container-botoes a:hover {
+    background-color: aqua;
+    transition: .5s;
+}
+
+@media (max-width: 1300px) {
+    main .titulo h1 {
+        font-size: 60px;
+    }
+
+    main .titulo h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    nav .links ul {
+        gap: 15px;
+    }
+
+    .redes-sociais {
+        width: 15%;
+    }
+
+    main .titulo h1 {
+        font-size: 50px;
+    }
+
+    main .titulo h2 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 5px 0;
+    }
+
+    nav .redes-sociais .icone {
+        width: 25px;
+        height: auto;
+    }
+    
+    nav .redes-sociais i {
+        font-size: 20px;
+        color: white;
+    }
+
+    nav .icone.link-home {
+        width: 20px;
+    }
+
+
+    nav .links ul {
+        gap: 10px;
+    }
+
+    nav .links ul li a {
+        font-size: 15px;
+    }
+
+    .redes-sociais {
+        width: 18%;
+    }
+
+    main .titulo h1 {
+        font-size: 40px;
+    }
+
+    main .titulo h2 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .site {
+        flex-direction: row;
+    }
+
+    nav {
+        width: 5%;
+    }
+
+    main {
+        justify-content: start;
+        margin-top: 150px;
+    }
+
+    main .titulo h1 {
+        font-size: 30px;
+    }
+
+    main .titulo h2 {
+        font-size: 10px;
+    }   
+}
