@@ -12,6 +12,10 @@ body {
     background: url(imagens/fundo.jpg) no-repeat fixed;
     background-size: cover;
 }
+
+p {
+    text-align: justify;
+}
     
 .site {
     height: 100%;
@@ -31,13 +35,16 @@ nav {
     box-shadow: 0 1px 5px  aqua;
     }
 
-nav .link-home {
-    color: white;
-    font-size: 35px;
+
+.casa {
+    /* width: 35px; */
+    margin-left: 5%;
 }
 
-nav .link-home {
-    margin-left: 5%;
+
+nav .casa .link-home {
+    color: white;
+    font-size: 35px;
 }
 
 .links {
@@ -87,7 +94,42 @@ nav .link-home {
     color: white;
 }
 
-nav i:hover {
+nav .hamburguer {
+    display: none;
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .redes-sociais i:hover {
     font-size: 30px;
+    transition: .1s;
+}
+
+nav .casa i:hover {
+    color: rgb(0, 221, 221);
     transition: .3s;
+}
+
+@media (max-width: 768px){
+    nav .hamburguer {
+        display: block;
+    }
+
+    nav .links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgb(54, 54, 54);
+    }
+
+    nav .links ul {
+        flex-direction: column;
+
+    }
+
+    nav .links.ativo {
+        display: flex;
+    }
 }
