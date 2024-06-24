@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(43, 43, 43);
 }
 
 .game {
@@ -10,15 +10,15 @@ body {
 }
 
 .tabela {
-    width: auto;
+    min-width: 260px;
     height: auto;
 }
 
 
 
 .tabela button {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-width: 1px;
     vertical-align: top;
     margin-top: 5px;
@@ -26,8 +26,8 @@ body {
 }
 
 .tabela button[disabled] {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border: 1px solid black;
     vertical-align: top;
     background-color: rgb(167, 247, 253);

@@ -1,0 +1,82 @@
+main {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+main a {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.section-inicio {
+    width: 60%;
+    height: fit-content;
+    padding: 30px 70px;
+    background-color: rgba(53, 53, 53, 0.5);
+    box-shadow: 0 0 10px 1px rgb(0,180,180);
+    scroll-snap-align: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-inicio h1 {
+    font-size: 70px;
+    text-align: center;
+    color: rgb(0,180,180);
+    margin-bottom: 20px;
+}
+
+.section-inicio ul {
+    margin: 20px 0 0 20px;
+}
+
+.section-inicio p, .section-inicio ul li {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+.projetos {
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    background-color: rgba(71, 71, 71, 0.5);
+    display: flex;
+    /* justify-content: space; */
+    gap: 50px;
+    /* justify-content: space-around; */
+}
+
+.projetos:hover {
+    cursor: pointer;
+    background-color: rgba(100, 100, 100, 0.5);
+    transition: .5;
+}
+
+.projetos h2 {
+    color: rgb(0,180,180);
+    margin-bottom: 10px;
+}
+
+.projetos p {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: rgb(150, 150, 150);
+}
+
+
+.projetos .container-img {
+    width: 50%;
+}
+
+.projetos img {
+    width: 100%;
+}
