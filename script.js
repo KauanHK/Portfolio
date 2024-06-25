@@ -1,19 +1,16 @@
 const seta = document.querySelector('.seta');
-const main = document.querySelector('.projeto1');
+const projeto1 = document.querySelector('.projetos.projeto1');
 
 const hamburguer = document.querySelector('.hamburguer');
 const links = document.querySelector('.links');
 
 seta.addEventListener('click',function(){
-
-    targetPosition = main.getBoundingClientRect().top + window.scrollY;
-    offsetPosition = targetPosition - (window.innerHeight / 2) + (main.clientHeight / 2);
-    main.scrollIntoView({ behavior: 'smooth' });
-
+    
+    const posicaoProjeto1 = projeto1.getBoundingClientRect().top - 100
     window.scrollTo({
-        top: offsetPosition,
+        top: posicaoProjeto1,
         behavior: 'smooth'
-    })
+    });
 
 })
 
