@@ -7,21 +7,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30vh;
+    gap: 300px;
 }
 
 section {
-    height: 40vh;
-    padding-top: 100px;
+    height: 65vh;
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .section-main {
     width: 100%;
-    padding-top: 0;
+    /* height: 70vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +67,7 @@ main .shadow {
     background-color: var(--cor-primaria);
     font-size: 20px;
     font-weight: 550;
-    width: 30%;
+    width: 40%;
     padding: 10px 0;
     border: 2px solid var(--cor-primaria);
     border-radius: 8px;
@@ -95,8 +94,9 @@ main .shadow {
 }
 
 .divisor {
-    padding: 3px 20px;
-    background-color: var(--cor-secundaria);
+    width: 20px;
+    height: 5px;
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -111,10 +111,11 @@ main .shadow {
     color: var(--cor-secundaria);
     width: 30%;
     padding: 30px 50px;
-    background-color: var(--fundo-transparente);
+    background-color: rgba(63, 63, 63, 0.5);
 }
 
 .section-sobre .card h3 {
+    /* color: var(--cor-primaria); */
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
@@ -128,14 +129,35 @@ main .shadow {
 
 .section-sobre .linguagem {
     background-color: rgb(80, 80, 80);
-    color: var(--cor-secundaria);
-    font-size: 20px;
     width: fit-content;
     height: fit-content;
     margin-bottom: 5px;
     padding: 5px 10px;
     border-radius: 20%;
 }
+
+.section-sobre .linguagem > i {
+    font-size: 30px;
+}
+
+/* .container-seta {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-main .seta {
+    width: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.section-main .seta:hover {
+    cursor: pointer;
+    font-size: 55px;
+    transition: .2s;
+} */
 
 .container-botao {
     margin-top: 40px;
@@ -152,53 +174,27 @@ main .shadow {
 
 .botao:hover {
     background-color: rgb(0, 238, 238);
-    transition: .2s;
+    transition: .5s;
 }
 
-.projetos {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-.projetos h2 {
-    text-align: center;
-    color: var(--cor-primaria);
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.projetos .container-cards {
-    width: 100%;
-    margin-bottom: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.projetos .container-cards .card {
-    width: 25%;
-    height: fit-content;
-    background-color: var(--fundo-transparente);
-    padding: 20px 30px;
-}
-
-.projetos .container-cards .card h3 {
-    text-align: center;
-    color: white;
-    font-size: 25px;
-}
-
-.projetos .container-img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    background-color: var(--fundo-transparente);
-    display: flex;
-    justify-content: center;
+.projetos .container-img, .projetos .container-txt {
+    width: 40%;
 }
 
 .projetos .container-img img {
-    width: 80%;
+    width: 100%;
+}
+
+.projetos .container-txt h2 {
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.projetos p {
+    color: white;
+    font-size: 20px;
 }
 
 @media (max-width: 1300px) {

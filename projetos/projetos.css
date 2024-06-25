@@ -29,7 +29,8 @@ main p {
 .projetos:hover {
     cursor: pointer;
     transition: .2s;
-    box-shadow: 0 0 10px 2px var(--cor-primaria);
+    /* box-shadow: 0 0 10px 2px var(--cor-primaria); */
+    background-color: rgba(100, 100, 100, 0.5);
 }
 
 .projetos h2 {
