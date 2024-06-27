@@ -1,3 +1,5 @@
+// Separar o código da seta
+
 const seta = document.querySelector('.seta');
 const projeto1 = document.querySelector('.projetos.projeto1');
 

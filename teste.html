@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mostrar Elemento ao Passar o Mouse</title>
+<style>
+  .hover-target {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .hidden-element {
+    display: none;
+    width: 200px;
+    height: 100px;
+    background-color: #2ecc71;
+    color: white;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hover-target:hover + .hidden-element {
+    display: flex; /* Pode ser flex, block, inline-block, etc., dependendo do tipo de elemento */
+  }
+</style>
+</head>
+<body>
+
+<div class="hover-target">Passe o mouse aqui</div>
+<div class="hidden-element">Elemento oculto</div>
+
+</body>
+</html>
