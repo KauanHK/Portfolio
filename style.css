@@ -68,7 +68,7 @@ nav .casa .link-home {
 
 .links li {   
     list-style-type: none;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     display: flex;
     justify-content: center;
 }
@@ -84,26 +84,31 @@ nav .casa .link-home {
     font-size: 20px;
 }
 
-.redes-sociais {
-    width: 10%;
+.container-rs-mobile {
+    display: none;
+}
+
+.container-rs-menu {
+    width: 15%;
     margin-right: 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1%;
 }
 
-.redes-sociais .icone {
+.container-rs-menu .icone {
     width: 30px;
     height: auto;
 }
 
-.redes-sociais i {
+.container-rs-menu i {
     font-size: 25px;
     color: white;
 }
 
-.redes-sociais svg {
-    width: 30px;
+.container-rs-menu svg, .container-rs-mobile svg {
+    width: 25px;
 }
 
 /* Ícone hamburguer para telas menores */
@@ -114,13 +119,13 @@ nav .hamburguer {
     cursor: pointer;
 }
 
-nav .redes-sociais i:hover {
+.container-rs-menu i:hover {
     font-size: 30px;
     transition: .1s;
 }
 
-.redes-sociais svg:hover {
-    width: 35px;
+.container-rs-menu svg, .container-rs-mobile svg:hover {
+    width: 30px;
     transition: .1s;
 }
 
@@ -129,14 +134,26 @@ nav .casa i:hover {
     transition: .3s;
 }
 
+/* Definindo todos os section */
+section {
+    width: 100%;
+    min-height: 30vh;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    scroll-snap-align: start;
+}
+
 /* Primeiro section */
 .section-main {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25vh;
 }
 
 .titulo {
@@ -160,7 +177,7 @@ h2.titulo {
 }
 
 /* Sombra/borda azul em torno do elemento */
-main .shadow {
+.shadow {
     box-shadow: 0 0 1px 1px aqua;
 }
 
@@ -203,25 +220,49 @@ main .shadow {
     transition: .2s;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     nav .hamburguer {
         display: block;
     }
 
     nav .links {
         display: none;
+    }
+
+    nav .links.ativo {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding: 0 20px;
         position: absolute;
         top: 100%;
         right: 0;
         background-color: rgb(54, 54, 54);
     }
 
-    nav .links ul {
-        flex-direction: column;
-
+    nav .links.ativo li {
+        padding: 10px 0;
     }
 
-    nav .links.ativo {
+    div.redes-sociais {
+        width: 20%;
+    }
+}
+
+@media (max-width: 640px){
+
+    .container-rs-menu {
+        display: none;
+    }
+    
+    .container-rs-mobile {
         display: flex;
     }
+
+    .container-rs-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
 }

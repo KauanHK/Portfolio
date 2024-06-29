@@ -1,3 +1,7 @@
+.section-main {
+    width: 80%;
+}
+
 main {
     width: 100%;
     display: flex;
@@ -72,22 +76,26 @@ main p {
     }
 }
 
-@media (max-width: 640px) {
-
-    .section-inicio {
-        padding: 20px 40px;
-    }
-
-    .section-inicio h1 {
-        font-size: 50px;
-    }
+@media (max-width: 768px) {
 
     main a {
-        width: 80%;
+        width: 50%;
     }
 
     .projetos {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .projetos .container-txt {
+        text-align: center;
+        width: 100%;
+    }
+
+    .projetos .container-txt p {
+        padding: 12px 0;
     }
 
     .projetos .container-img {
@@ -98,15 +106,6 @@ main p {
     }
 
     .projetos .container-img img {
-        width: 30%;
+        width: 50%;
     }
-
-    .projetos .container-txt {
-        text-align: center;
-    }
-
-    .projetos .container-txt {
-        width: 100%;
-    }
-
 }
