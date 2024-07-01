@@ -1,41 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mostrar Elemento ao Passar o Mouse</title>
-<style>
-  .hover-target {
-    width: 200px;
-    height: 100px;
-    background-color: #3498db;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
-  .hidden-element {
-    display: none;
-    width: 200px;
-    height: 100px;
-    background-color: #2ecc71;
-    color: white;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hover-target:hover + .hidden-element {
-    display: flex; /* Pode ser flex, block, inline-block, etc., dependendo do tipo de elemento */
-  }
-</style>
-</head>
-<body>
-
-<div class="hover-target">Passe o mouse aqui</div>
-<div class="hidden-element">Elemento oculto</div>
-
-</body>
-</html>
+<div class="contact-page">
+  <h2>Contato</h2>
+  <p>Fique à vontade para entrar em contato comigo através de qualquer uma das plataformas abaixo:</p>
+  
+  <h3>Email</h3>
+  <p><a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+  
+  <h3>Telefone</h3>
+  <p>+55 (11) 1234-5678</p>
+  
+  <h3>Redes Sociais</h3>
+  <ul>
+      <li><a href="https://www.linkedin.com/in/seu-perfil">LinkedIn</a></li>
+      <li><a href="https://github.com/seu-usuario">GitHub</a></li>
+      <li><a href="https://www.behance.net/seu-usuario">Behance</a></li>
+      <li><a href="https://twitter.com/seu-usuario">Twitter</a></li>
+      <li><a href="https://www.instagram.com/seu-usuario">Instagram</a></li>
+  </ul>
+  
+  <h3>Formulário de Contato</h3>
+  <form action="envia_email.php" method="post">
+      <label for="name">Nome:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Mensagem:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      <input type="submit" value="Enviar">
+  </form>
+</div>
