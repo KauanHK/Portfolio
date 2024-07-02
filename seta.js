@@ -1,11 +1,11 @@
-const projeto1 = document.querySelector('.projetos.projeto1');
+const destino = document.querySelector('.destino');
 const seta = document.querySelector('.seta');
 
+const posicaoDestino = destino.getBoundingClientRect().top - document.querySelector('nav').clientHeight - 50;
 seta.addEventListener('click',function(){
     
-    const posicaoProjeto1 = projeto1.getBoundingClientRect().top - 400
     window.scrollTo({
-        top: posicaoProjeto1,
+        top: posicaoDestino,
         behavior: 'smooth'
     });
 

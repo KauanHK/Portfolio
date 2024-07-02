@@ -2,13 +2,19 @@ main {
     width: 100%;
     height: 90vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 main .content {
     width: 70%;
-    /* background-color: var(--fundo-transparente); */
 }
 
 .container-links {
@@ -67,3 +73,78 @@ main .content {
     transform-origin: bottom left;
     transition: .5s;
   }
+
+  .container-botao {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+
+
+
+
+.container-formulario {
+    display: none;
+}
+
+.container-formulario.ativo {
+    display: block;
+    position: absolute;
+    top: 20%;
+    width: 30%;
+    background-color: rgba(48, 48, 48, 0.9);
+    margin-top: 20px;
+    padding: 20px 32px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.fechar {
+    color: red;
+    font-size: 25px;
+    text-align: end;
+    cursor: pointer;
+}
+
+.fechar i {
+    background-color: rgba(0,0,0,0.3);
+    padding: 2px;
+}
+
+.formulario {
+    position: relative;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 75%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 5px;
+}
+
+.formulario label {
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: var(--cor-botao);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button:hover {
+    background: var(--cor-botao-hover);
+}

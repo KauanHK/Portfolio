@@ -74,15 +74,15 @@ nav .casa .link-home {
     justify-content: center;
 }
 
-.links li a:hover {
-    color: aqua;
-    transition: .5s;
-}
-
 .links a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+
+.links li a:hover {
+    color: aqua;
+    transition: .5s;
 }
 
 .container-rs-mobile {
@@ -90,12 +90,12 @@ nav .casa .link-home {
 }
 
 .container-rs-menu {
-    width: 15%;
+    width: 12%;
     margin-right: 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1%;
+    gap: 5px;
 }
 
 .container-rs-menu .icone {
@@ -109,7 +109,7 @@ nav .casa .link-home {
 }
 
 .container-rs-menu svg, .container-rs-mobile svg {
-    width: 25px;
+    width: 30px;
 }
 
 /* Ícone hamburguer para telas menores */
@@ -125,8 +125,8 @@ nav .hamburguer {
     transition: .1s;
 }
 
-.container-rs-menu svg, .container-rs-mobile svg:hover {
-    width: 30px;
+.container-rs-menu svg:hover, .container-rs-mobile svg:hover {
+    width: 35px;
     transition: .1s;
 }
 
@@ -134,6 +134,9 @@ nav .casa i:hover {
     color: rgb(0, 221, 221);
     transition: .3s;
 }
+
+
+
 
 /* Definindo todos os section */
 section {
@@ -187,12 +190,14 @@ h2.titulo {
 
 .botao {
     text-decoration: none;
+    text-align: center;
     margin: 20px 0;
     color: black;
     padding: 10px 30px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 20px;
     background: var(--cor-botao);
+    cursor: pointer;
 }
 
 .botao:hover {
@@ -220,6 +225,11 @@ h2.titulo {
     transition: .2s;
 }
 
+/* Link no menu de outra cor para demonstrar que está na página*/
+nav .pagina-atual {
+    color: aqua;
+}
+
 @media (max-width: 1024px){
     nav .hamburguer {
         display: block;
@@ -244,8 +254,9 @@ h2.titulo {
         padding: 10px 0;
     }
 
-    div.redes-sociais {
+    .container-rs-menu {
         width: 20%;
+        margin-right: 0;
     }
 }
 

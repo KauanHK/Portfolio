@@ -1,0 +1,80 @@
+.content {
+    background-color: var(--fundo-transparente);
+    width: 75%;
+    height: fit-content;
+    padding: 30px 50px;
+    border-radius: 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.content .container-txt {
+    width: 40%;
+    color: white;
+}
+
+.content .container-txt p {
+    margin-bottom: 10px;
+}
+
+.container-txt .titulo {
+    margin-bottom: 30px;
+}
+
+.content .container-img {
+    min-width: 200px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-img img {
+    width: 400px;
+}
+
+
+
+
+
+
+.section-linguagens {
+    width: 100%;
+}
+
+.container-linguagens {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 40%;
+}
+
+.linguagem .icone {
+    font-size: 100px;
+}
+
+.linguagem .txt {
+    color: rgb(220, 220, 220);
+    font-size: 25px;
+}
+
+.linguagem.html .icone {
+    color: orange;
+}
+
+.linguagem.css .icone {
+    color: lightblue;
+}
+
+.linguagem.js .icone {
+    color: yellow;
+}
+
+.linguagem.python .icone {
+    color: aqua;
+}
+
+.container-linguagens .linguagem .txt{
+    color: white;
+}
