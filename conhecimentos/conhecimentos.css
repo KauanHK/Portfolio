@@ -44,10 +44,16 @@
 }
 
 .container-linguagens {
-    display: flex;
-    justify-content: space-around;
     margin-top: 50px;
-    width: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.linguagem {
+    width: 90px;
 }
 
 .linguagem .icone {
@@ -77,4 +83,32 @@
 
 .container-linguagens .linguagem .txt{
     color: white;
+}
+
+@media (max-width: 768px){
+    .section-main h1 {
+        font-size: 60px;
+    }
+
+    .container-linguagens {
+        width: fit-content;
+        gap: 24px;
+    }
+
+    .linguagem {
+        width: 50px;
+    }
+
+    .linguagem .icone {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 550px) {
+    .section-main h1 {
+        font-size: 48px;
+    }
+    .section-main h2 {
+        font-size: 18px;
+    }
 }

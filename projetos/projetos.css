@@ -120,3 +120,18 @@ main p {
         width: 50%;
     }
 }
+
+@media (max-width: 550px){
+
+    .section-main h1 {
+        font-size: 60px;
+    }
+
+    .section-main h2 {
+        font-size: 18px;
+    }
+
+    main a {
+        width: 80%;
+    }
+}
