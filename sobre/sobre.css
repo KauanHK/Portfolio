@@ -12,16 +12,43 @@
 }
 
 .card {
-    min-width: 200px;
+    min-width: 350px;
     width: 20%;
     padding: 16px 24px;
     background: var(--fundo-transparente);
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
     border-radius: 8px;
-    flex: 1;
     max-width: 50%;
+}
+
+.linha1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.linha1 .card {
+    width: 30%;
+}
+
+.linha1 .card h2 {
+    margin-bottom: 8px;
+}
+
+.linha2 {
+    display: flex;
+    justify-content: center;
+}
+
+.linha2 .card {
+    width: 40%;
+}
+
+.linha2 h2 {
+    margin: 0;
 }
 
 .container-img {
@@ -39,6 +66,12 @@
     font-size: 28px;
     text-align: center;
     color: var(--cor-primaria);
+}
+
+.container-txt {
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 .container-txt p {

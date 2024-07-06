@@ -30,6 +30,7 @@ main p {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    margin-bottom: 50px;
 }
 
 .projetos {
@@ -79,7 +80,7 @@ main p {
 @media (max-width: 1150px) {
 
     main a {
-        width: 95%;
+        width: 75%;
     }
 
     .projetos {
@@ -89,9 +90,9 @@ main p {
 
 @media (max-width: 768px) {
 
-    main a {
+    /* main a {
         width: 50%;
-    }
+    } */
 
     .projetos {
         display: flex;
